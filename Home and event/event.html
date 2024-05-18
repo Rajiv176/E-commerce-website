@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="headingpic.jpeg"> 
+    <style>
+        .header{
+            background-color: black;
+        }
+        .calendar {
+ /* max-width: 600px;   Adjust width as needed */
+  margin: 30 auto; /* Center the container horizontally */
+  float: inline-start;
+   left:500px;
+}
+
+        .block {
+ color:black;
+   background-color:white;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: 600px;
+}
+
+.block-heading {
+  font-size: 20px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.block-content {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+        .first{
+            width: 100%;
+            height: 670px;
+        }
+        .ab_img{
+            margin-top: 100px;
+            margin-bottom:100px ;
+            margin-left:auto;
+            margin-right:auto;
+            height:300px;
+            width: 100%;
+        }
+        .register{
+background: yellow;
+margin: 0;
+padding: 0;
+height:290px;
+text-align: center;
+margin-bottom: -25px;
+        }
+        .about{
+background:gray;
+height:500px;
+        }
+        .image{
+            margin-bottom: -25px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+           color:black; /* Blue color */
+            background-color: #fff; /* White text color */
+            text-decoration: none; /* Remove underline */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add rounded corners */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .left-div {
+    float: left;
+    width: 50%; /* Adjust width as needed */
+    text-align: center;
+}
+footer {
+    background-color: rgb(255, 255, 255); /* Light gray background color */
+    padding: 50px 0; /* Padding at the top and bottom */
+  }
+  
+  .social-media a {
+    color: #007bff; /* Blue color for social media icons */
+    font-size: 24px; /* Icon size */
+    margin-right: 15px; /* Margin between icons */
+  }
+  
+  .social-media a:hover {
+    color: #0056b3; /* Darker blue color on hover */
+  }
+  
+  .container {
+    max-width: 960px; /* Maximum width for content */
+    margin: 0 auto; /* Center content horizontally */
+  }
+
+.contestants{
+    text-align: center;
+    background: rgb(87, 168, 215);
+}
+
+.right-div {
+    float: right;
+    width: 50%; /* Adjust width as needed */
+}
+.clear{
+    clear: both;
+}
+.eligibile{
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  height: 480px; /* Optional: Set a height for the container */
+
+}
+h3{
+    color: white;
+}
+.bottom-center {
+  position: absolute;
+  bottom: 5px; /* Adjust this value to your preference */
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+            padding: 10px 20px;
+           color:black; /* Blue color */
+            background-color: #fff; /* White text color */
+            text-decoration: none; /* Remove underline */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add rounded corners */
+            cursor: pointer; 
+}
+.event{
+text-align: end;
+}
+ 
+        @media (max-width: 550px)  {
+          .right-div img{
+      height:400px;
+     }
+            .first{
+height:500px;
+            }
+            .bottom-center{
+              position: absolute;
+              bottom: 200px;
+            }
+          .about{
+            height: 650px;
+            font-size: smaller;
+          }
+    
+         .register{
+          font-size: 15px;
+            height: 300px;
+         }
+           .block{
+            margin-left:50px;
+           } 
+           .event{
+            font-size: 30px;
+            text-align: center;
+           }
+           .content{
+          text-align: center;
+           }
+        }
+        @media (max-width: 500px) {
+     .foot{
+      font-size: 18px;
+     }
+            
+        }
+        @media (max-width: 400px) {
+     .about{
+    height: 750px;
+    
+     }.right-div img{
+      height:400px;
+     }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="headingpic.jpeg" alt="" class="img-fluid navbar_logo"style=" height:40px; width:130px;margin-left: 80px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Latest collection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Franchise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Up Comming Product </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact US</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <!-- Registration -->
+              </a>
+              <ul class="dropdown-menu"> -->
+                <!-- <li><a class="dropdown-item text-black" href="#">Participation Form </a></li>
+                    <li><a class="dropdown-item text-black" href="#">Book a Ticket</a></li> -->
+              </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="header">
+    <div class="image">
+        <img src="win2.jpeg" alt="" class="first"><br>
+        
+        <a href="" class="bottom-center">PAST EVENTS</a>
+        <!-- <a href="" class="button">PAST EVENTS</a> -->
+     </div>
+    <div class="register">
+        <br><br>
+<h2>Registrations Open...</h2><br>
+<h1>MISS & MRS DOLPHIN UNIVERSE 2024</h1><br>
+<a href="" class="button"> APPLY NOW</a><br>
+    </div>
+    <div class="about"><br>
+        <div class="left-div"><h1> ABOUT US</h1><br><br>
+  <p style="color: white; width: 90%; margin-left: 10px;">D.Dolphin is dedicated to fostering women's empowerment through our annual beauty pageant events. As part of our commitment to celebrating women from all walks of life, we are thrilled to announce the upcoming Miss and Mrs D Dolphin Universe beauty pageant in Goa. Prior to the event, we will host online grooming sessions led by renowned international experts, each a former beauty queen in their respective countries. We believe in providing a platform for every woman, regardless of marital status, to shine and represent our values of inclusivity and empowerment.</p><br><a href="" class="button" style="align-items: center;"> Know More</a></div>   <div class="right-div"><img src="past3.jpeg" alt="" class="ab_img"></div> </div>
+    <div class="contestants">
+        <br><br>
+        <h1> WALK LIKE THE MODELS!!</h1>
+        <h2>RULE THE  RUNWAY!!</h2> <br>
+        <a href="" class="button">View Contestants</a><br><br>
+    </div>
+    <div class="calendar">
+        <br>
+        <h1  class="event" style="color: white;">EVENT CALENDAR</h1>
+        <br>
+        <div class="block">
+            <h2 class="block-heading">Registration Starts</h2>
+            <p class="block-content"> 1st April 2024 to 5th May 2024</p>
+          </div>
+          <div class="block">
+            <h2 class="block-heading">Photoshoot</h2>
+            <p class="block-content">21st June ,2024</p>
+          </div>
+          <div class="block">
+            <h2 class="block-heading">Grooming Session</h2>
+            <p class="block-content">15th May 2024 to 15th June 2024</p>
+          </div>
+          <div class="block">
+            <h2 class="block-heading">Grand Finale</h2>
+            <p class="block-content">22nd June 2024</p>
+          </div>
+    </div>
+    <div class="clear"></div>
+    <br><br>
+    <div class="eligibile">
+        <div class="content"> 
+            <br><br>
+        <h1  class="event" style="color: white;"> ELIGIBLITY CRITERIA</h1><br>
+        <h3>Age</h3> 
+        <p style="color: white;"> 18 to 25 years</p>
+        <h3> Height</h3>
+        <p style="color: white;"> 5 feet and above</p>
+        <h3>Martial Status </h3>
+        <p style="color: white;">  Single,Unmarried,Not Engaged & Never been Married</p> <br>
+        <a href="" class="button">Apply Now</a>
+        </div>
+    </div>
+</div>
+<!-- <section class="footer">
+    <div class="row justify-content-evenly">
+      <div class="col-12">
+        <h3 class="text-center mt-2 pt-5"style="color: black;"> Dakshit Dolphin Designers Pvt. Ltd</h3>
+      </div>
+
+      <div class="col-12 col-sm-5 mt-2">
+        <h3 class="mx-4 mt-2" style="color: black;"> Registered Office : </h3>
+        <p class="mx-5">
+          186, Gurguj,Ward No.13, Lajpat Nagar, <br />Near Punjab Sindh
+          Bank, Sumerpur ,<br />Hamirpur, Uttar Pradesh (India),<br />
+          (CIN) – U18209UP2021PTC145526.
+        </p>
+      </div>
+
+
+      <div class="col-12 col-sm-5 2">
+        <div class="social" style="font-size: 40px;">
+          <a href="https://www.facebook.com/profile.php?id=100086234095328&mibextid=ZbWKwL" target="_blank">
+            <i class="fa-brands fa-facebook my_icon"></i>
+          </a>
+          <a href="mailto:d.dolphin@ddolphins.com"target="blank">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a href="https://instagram.com/dakshitdolphin?igshid=NmE0MzVhZDY"target="blank">
+            <i class="fa-brands fa-instagram my_icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/dakshit-dolphin-designers-pvt-ltd/"target="blank">
+            <i class="fa-brands fa-linkedin my_icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <center><footer>
+    <h1 style="color: black;" class="foot">Dakshit Dolphin Designers Pvt. Ltd</h1>
+    <h2 class="foot">Registered Office:</h2>
+    <p>186, Gurguj, Ward No.13, Lajpat Nagar, Near Punjab Sindh Bank, Sumerpur,<br> Hamirpur, Uttar Pradesh (India), <br>(CIN) U18209UP2021PTC145526.
+    </p>
+    <h1 style="color: black;">Follow us</h1>
+  <div class="Social-media">
+    <a href="https://www.facebook.com/profile.php?id=100086234095328&mibextid=kFxxJD"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/company/dakshit-dolphin-designers-pvt-ltd/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://instagram.com/dakshitdolphin?igshid=NmE0MzVhZDY="><i class="fab fa-instagram"></i></a>
+    <a href="https://youtube.com/@DDolphinDesigners?si=W0MQl-4wIfYnKtUJ"><i class="fab fa-youtube"></i></a>
+  </div>
+    <p>&copy; Dakshit Dolphin Designers Pvt Ltd.</p>
+  </footer></center>
+
+  <!-- ======================================== 
+          Our JavaScript Section Start  
+    ========================================  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const mobile_nav = document.querySelector(".mobile-navbar-btn");
+    const nav_header = document.querySelector(".header");
+    const toggleNavbar = () => {
+      nav_header.classList.toggle("active");
+    };
+    mobile_nav.addEventListener("click", () => toggleNavbar());
+  </script>
+</body>
+</html>
